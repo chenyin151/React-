@@ -28,21 +28,9 @@ if (__DEV__) {
 // 创建store,这个store把mutation传入进去
 const store = configureStore();
 render(
-    // <Hello />,
-    // <Todo />,
-    // 在报找不到RouteMap路径的时候很可能是路由表中引用的页面出现问题了,
-    // 写入路由导航就不能在页面中写死页面，否则报错,在react-router有hashHistory(#/List的形式)
-    // 和browserHistory(/List的形式),但是需要后端服务器的支持，所以先用hashHistory,对搜索引擎支持的
-    // 也比较友好
-    
-    // 这样做，路由里面的所有页面都有了store
-    // <Provider store={store}>
-    // <RouteMap history={hashHistory} ></RouteMap>
-    // </Provider>,
-
-    // <RouteMap history={hashHistory}></RouteMap>,
     <Provider store={store}>
-        <Hello />
+        <RouteMap history={hashHistory}/>
     </Provider>,
-    document.getElementById('root')
+
+   document.getElementById('root')
 )
