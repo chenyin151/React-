@@ -11,12 +11,21 @@ class App extends React.Component {
     }
     render() {
         return (
+            // 模拟加载页面
             <div>
-                <p>head</p>
-                <div>{this.props.children}</div>
-                <p>foot</p>
+                {
+                    this.state.initDone?this.props.children:<div>加载中...</div>
+                }
             </div>
+            
         )
+    }
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({
+                initDone: true
+            })
+        },1000)
     }
 }
 
