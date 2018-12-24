@@ -9,7 +9,9 @@ class Detail extends React.Component {
     render() {
         return (
             <div>
-                <h1>Detail</h1>
+                {/* 从路由中获取参数,react的路由参数也是放在 props中，这点跟Vue不同，Vue中是
+                放在$route.query或者$route.params中 */}
+                <p>Detail, url参数：{this.props.params.id}</p>
             </div>
         )
     }

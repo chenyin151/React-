@@ -24,7 +24,7 @@
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
-    "koa": "^1.2.2",
+    "koa": "^1.6.2",
     "koa-router": "^5.4.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
@@ -37,16 +37,16 @@
     "webpack-dev-server": "^1.15.0"
   },
   "dependencies": {
-    "es6-promise": "^3.2.1",
+    "es6-promise": "^3.3.1",
     "immutable": "^3.8.1",
     "react": "^15.3.1",
     "react-addons-css-transition-group": "^15.3.1",
     "react-addons-perf": "^15.4.2",
     "react-addons-pure-render-mixin": "^15.6.2",
     "react-dom": "^15.3.1",
-    "react-redux": "^4.4.5",
+    "react-redux": "^4.4.9",
     "react-router": "^2.8.1",
-    "redux": "^3.5.2",
-    "whatwg-fetch": "^1.0.0"
+    "redux": "^3.7.2",
+    "whatwg-fetch": "^1.1.1"
   }
 }
